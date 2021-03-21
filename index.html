@@ -3,6 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>model-viewer demo</title>
+    <style>
+    #custom-ar-button {
+      font-size: 24px;
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+    }
+    </style>
   </head>
   <body>
 
@@ -17,7 +25,7 @@
     ar
     alt="Leoモデル"   
     src="untitled.glb" 
-　　ios-src="untitled.usdz" 
+
     style="width:800px;height:1000px;"                  
 
     background-color="#70BCD1"
@@ -25,7 +33,9 @@
     camera-controls
     quick-look-browsers = "safari chrome"
     interaction-prompt="auto"
+    auto-rotate ar magic-leap>
 
+    <button id="custom-ar-button" slot="ar-button">Start AR</button>
     </model-viewer>
 
   </body>
