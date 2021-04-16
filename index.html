@@ -11,6 +11,36 @@
       left: 16px;
     }
     </style>
+    <style>
+      div {
+        font-size: 2rem;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .parent {
+        background: lightblue;
+        display: flex;
+      }
+
+      .child {
+        background: lightgreen;
+        width: 150px;
+      }
+
+      @media screen and (max-width: 800px) {
+        .parent {
+          flex-wrap: wrap;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .parent {
+          display: block;
+        }
+      }
+    </style>
   </head>
   <body>
 
@@ -20,49 +50,50 @@
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
 
   </script>
-
+  <div class="parent">
+    <div class="child">
     <model-viewer  
     alt="モデル"   
     ios-src="untitled.usdz" 
     src="sd.glb"
     quick-look-browsers = "safari chrome"
     style="width:500px;height:600px;" 
-                  
     background-color="#70BCD1"
     shadow-intensity="0.7"
     camera-controls
     autoplay
     ar magic-leap>
-
     <button id="custom-ar-button" slot="ar-button">Start AR</button>
     </model-viewer>
+    </div>
+    <div class="child">
     <model-viewer  
     alt="モデル"   
     ios-src="untitled.usdz" 
     src="416.glb"
     quick-look-browsers = "safari chrome"
     style="width:500px;height:600px;"  
-
     background-color="#70BCD1"
     shadow-intensity="0.7"
     camera-controls
     autoplay
     ar magic-leap>
-
     </model-viewer>
-        <model-viewer  
+    </div>
+    <div class="child">
+    <model-viewer  
     alt="モデル"   
     ios-src="untitled.usdz" 
     src="417.glb"
     quick-look-browsers = "safari chrome"
     style="width:500px;height:600px;"                  
-
     background-color="#70BCD1"
     shadow-intensity="0.7"
     camera-controls
     autoplay
     ar magic-leap>
-
     </model-viewer>
+    </div>
+  </div>
   </body>
 </html>
