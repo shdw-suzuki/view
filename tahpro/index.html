@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>takei production</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="we offer interesting fashion">
+<meta name="keywords" content="tokone,tkone,tahpro">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/openclose.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<!--小さな端末用（480px以下端末）ブロック-->
+<div id="sh">
+
+<!--小さな端末用ロゴ-->
+<p id="logo"><a href="index.html"><img src="images/logo_s.png" alt="TahPro"></a></p>
+
+<!--小さな端末用メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="news.html">NEWS</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</nav>
+
+</div>
+<!--/sh-->
+<style>
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+p{font-size:150%;}
+.flex-item1 {
+flex-basis: 79%; /* flexアイテムの幅を割合で指定 */
+}
+.flex-item2 {
+flex-basis: 29%; /* flexアイテムの幅を割合で指定 */
+}
+
+section.list h4.open {
+    background: url(images/btn_minus.png) no-repeat right center/30px 30px ;
+}
+section.list h4.close {
+    background: url(images/btn_plus.png) no-repeat right center/30px 30px;
+}
+
+@media screen and (max-width:480px){
+.flex{
+    display: block;
+}
+}
+</style>
+<div id="container">
+
+<div id="main">
+
+<section>
+
+<h2>business</h2>
+
+<section class="list">
+<h4 id="s1_hdr" class="close">【T.K.ONE】----  OEM受託・生産（レッグウエア）</h4>
+<div class="flex" id="s1_info">
+<p class="flex-item1">
+  <iframe src="https://shdw-suzuki.github.io/view/sample1.html" height="520px">    
+  </iframe>
+</p>
+<p class="flex-item2">
+<br><br>
+★　基本の流れ<br><br>
+①　商談<br><br>
+②　お見積り<br><br>
+③　デザイン打ち合わせ<br><br>
+④　納品
+</p>
+</div>
+</section>
+
+<section class="list">
+<h4 id="s2_hdr" class="close">【tokone】  ----  デザイン・販売（レッグウエア）</h4>
+<div class="flex" id="s2_info">
+<p class="flex-item1">
+  <iframe src="https://shdw-suzuki.github.io/view/sample2.html" height="520px">    
+  </iframe>
+</p>
+<p class="flex-item2">
+<br><br>
+★　基本の流れ<br><br>
+①　商談<br><br>
+②　お見積り<br><br>
+③　デザイン打ち合わせ<br><br>
+④　納品
+</p>
+</div>
+</section>
+
+<section class="list">
+<h4 id="s3_hdr" class="close">【tahpro】  ----  マネジメント・企画・撮影・映像編集</h4>
+<div class="flex" id="s3_info">
+<p class="flex-item1">
+  <iframe src="https://shdw-suzuki.github.io/view/sample3.html" height="520px">    
+  </iframe>
+</p>
+<p class="flex-item2">
+<br><br>
+★　基本の流れ<br><br>
+①　商談<br><br>
+②　お見積り<br><br>
+③　デザイン打ち合わせ<br><br>
+④　納品
+</p>
+</div>
+</section>
+
+
+</section>
+
+</div>
+<!--/main-->
+
+<div id="sub">
+
+<!--大きな端末用（481px以上端末）ロゴ-->
+<p id="logo"><a href="index.html"><img src="images/logo.png" alt="TahPro"></a></p>
+
+<!--大きな端末用（481px以上端末）メニュー-->
+<nav id="menubar">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="news.html">NEWS</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</nav>
+
+</div>
+<!--/sub-->
+
+</div>
+<!--/container-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">T.K.ONE Co., Ltd.</a> All Rights Reserved.</small>
+<span class="pr"><a href="http://template-party.com/" target="_blank">Web Design:Template-Party</a></span>
+</footer>
+<script type="text/javascript">
+open_close("s1_hdr", "s1_info");
+open_close("s2_hdr", "s2_info");
+open_close("s3_hdr", "s3_info");
+</script>
+<!--メニューの３本バー-->
+<div id="menubar_hdr" class="close"><span></span><span></span><span></span></div>
+<!--メニューの開閉処理条件設定　480px以下-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 480) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+</body>
+</html>
